@@ -6,23 +6,17 @@
     <title>Form</title>
 </head>
 <body>
-    <form action="" class="details" id="1">
-        <fieldset>
+    <fieldset>
             <legend>Your Details</legend>
-            <lable class="Full_Name">
-                Name : <input type="text" class="Nmae">
-            </lable><br>
-
-            <lable class="Email">
-                Email : <input type="text" class="Email">
-            </lable>
-        </fieldset>
-    </form>
-    <form action="" class="review">
+            <form action="filldetails" class="details" id="1">
+<p>
+                Name : <input type="text" class="Nmae"><br>
+                Email : <input type="text" class="Email"><p>
+    </form> </fieldset>
         <fieldset>
+            <form action="detail" class="detail"></form>
             <legend>Book your room</legend>
             <!--option for rooms-->
-            <label for="advertisement" class="advertisement"></label>
                 Which room would you like to book:
                 <select name="Ad" id="AD">
                     <option value="single">single</option>
@@ -30,7 +24,6 @@
                     <option value="Cabana">Cabana</option>
                     <option value="Quad">Quad</option>
                 </select>
-            </label>
             <br>
             <label for="payment" class="payment">How would you like to pay</label><br>
             <label for="debit">
@@ -45,7 +38,7 @@
             </lable><br>
             <!--place for review-->
             <label for="Review">Please leave review <br>
-                <textarea name="box" id="" cols="15" rows="4"></textarea>
+                <textarea name="box" id="2" cols="15" rows="4"></textarea>
             </label>
             <br>
             <label for="EmailAlert">
@@ -56,13 +49,12 @@
             <!--feedback for the webpage-->
             <label for="review" class="review">Did you find this page useful</label>
             <label for="yes"><br>
-                Yes: <input type="radio" clasws = "yes">
+                Yes: <input type="radio" class = "yes">
             </label>
             <label for="yes">
                 No: <input type="radio" class = "No">
             </label>
         </fieldset>
-    </form>
 
 
 </body>
