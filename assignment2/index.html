@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Pizza</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body { 
+            font-family: sans-serif; 
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4%;
+            font-size: 19px; /* Adjust the font size as needed */
+            background-color: red;
+            color: aliceblue;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 60px;
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 1px;
+        }
+        .logo_text {
+            font-size: 20px; /* Adjust font size */
+            margin-left: 10px; /* Adjust margin to remove space */
+        }
+        .ul1 {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            gap: 0.5rem; 
+        }
+        .ul1 li {
+            justify-content: space-evenly;
+            margin-right: 15px; /* Adjust spacing between list items */
+            padding: 7px 7px; /* Adjust padding as needed */
+            background-color: rgb(248, 65, 3);
+
+        }
+        .ul1 li:hover:active {
+            background-color: rgb(205, 71, 27);
+
+        }
+        .ul1 a {
+            color: aliceblue;
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth transition effect */
+
+        }
+        .ul1 a:hover {
+            color: white; /* Change text color on hover */
+        }     
+        .button {
+            display: flex;
+            background-color: rgb(160, 176, 8);
+            border: none;
+            font-size: 17px; /* Adjust the font size as needed */
+            border-radius: 100px;
+             padding: 10px 20px;/* Adjust padding as needed */
+        }
+        .button a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: rgb(160, 176, 8);
+            border-radius: 80px;
+            transition: background-color 0.3s; /* Smooth transition effect */
+        }
+
+        .button a:hover {
+            background-color: rgb(102, 109, 32); /* Change background color on hover */
+}
+        .button:hover:active {
+            background-color: rgb(102, 109, 32);
+        }
+        /* card section */
+        .cards {
+            display: flex;
+        }
+        .card {
+            font-size: ;
+            border: 4px solid black;
+            text-align: center;
+            flex-direction: column;
+            margin: 4px;
+            flex: 1;
+        }
+        .card.price {
+            padding: 5px;
+            background-color: black;    
+        }
+        .card.body {
+            flex: 1;
+        }
+        /* img {
+            margin: 1px;
+            width: 60%;
+        } */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 20px 20px;
+        }
+        .card img {
+            margin: 10px;
+            width: 150px;
+            height: 160px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        .card h5 {
+            padding: 5px;
+            text-align: center;
+        }
+        .card button {
+            padding: 6px 10px;
+            border: none;
+            outline: none;
+            background-color: rgb(125, 176, 5);
+            color: aliceblue;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 15px;
+            display: block;
+            transition: 0.2s all;
+        }
+        .card button:hover {
+            transform: scale(1.05);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Add logo -->
+        <div class="logo">
+            <img src="pic111.png" alt="pizza logo" class="logo">
+            <h1 class="logo_text">PIZZA PIZZA</h1>
+        </div>
+        <!-- <span class="logo_text">Pizza Pizza</span> -->
+
+        <!-- Navigation section -->
+        <nav>
+            <ul class="ul1">
+                <li><a href="">Home</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="button">
+            <a href="order.html">Order Now</a>
+        </div>
+    </header>
+
+    <!-- order -->
+    <div class="cards">
+        <div class="card">
+            <img src="pepporonipizza.png" alt="pizza1" class="body">
+            <h5>pepperoni Pizza </h5>
+            <div class="price">price:$$</div>
+            <button><a href="order.html">Order Now</a></button>
+        </div>
+        <div class="card">
+            <img src="vegpizza.png" alt="pizza2" class="body">
+            <h5>Vegetable + pepperoni Pizza</h5>
+            <div class="price">price:$$</div>
+            <button><a href="order.html">Order Now</a></button>
+
+        </div>
+        <div class="card">
+            <img src="cheese pizza.png" alt="pizza3" class="body">
+            <h5>margarita Pizza</h5>
+            <div class="price">price:$$</div>
+            <button><a href="order.html">Order Now</a></button>
+
+        </div>
+        <div class="card">
+            <img src="italianpizza.png" alt="pizza4" class="body">
+            <h5>Italian Pizza</h5>
+            <div class="price">price:$$</div>
+            <button><a href="order.html">Order Now</a></button>
+        </div>
+        <div class="card">
+            <img src="californiapizza.jpg" alt="pizza4" class="body">
+            <h5>California Pizza</h5>
+            <div class="price">price:$$</div>
+            <button><a href="order.html">Order Now</a></button>
+        </div>
+        <div class="card">
+            <img src="pic.webp" alt="pizza4" class="body">
+            <h5>Hawaiian Pizza</h5>
+            <div class="price">price:$$</div>
+            <button><a href="order.html">Order Now</a></button>
+        </div>
+    </div>
+</body>
+</html>
