@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body { 
+            font-family: sans-serif; 
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4%;
+            font-size: 19px; /* Adjust the font size as needed */
+            background-color: red;
+            color: aliceblue;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 60px;
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 1px;
+        }
+        .logo_text {
+            font-size: 20px; /* Adjust font size */
+            margin-left: 10px; /* Adjust margin to remove space */
+        }
+        .ul1 {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            gap: 0.5rem; 
+        }
+        .ul1 li {
+            justify-content: space-evenly;
+            margin-right: 15px; /* Adjust spacing between list items */
+            padding: 7px 7px; /* Adjust padding as needed */
+            background-color: rgb(242, 22, 22);
+            border-radius: 500px;
+
+
+        }
+        .ul1 li:hover:active {
+            background-color: rgb(247, 34, 22);
+
+        }
+        .ul1 a {
+            color: aliceblue;
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth transition effect */
+
+        }
+        .ul1 a:hover {
+            color: white; /* Change text color on hover */
+        }     
+        .button {
+            display: flex;
+            background-color: rgb(160, 176, 8);
+            border: none;
+            font-size: 17px; /* Adjust the font size as needed */
+            border-radius: 100px;
+             padding: 10px 20px;/* Adjust padding as needed */
+        }
+        .button a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: rgb(160, 176, 8);
+            border-radius: 80px;
+            transition: background-color 0.3s; /* Smooth transition effect */
+        }
+
+        .button a:hover {
+            background-color: rgb(102, 109, 32); /* Change background color on hover */
+}
+        .button:hover:active {
+            background-color: rgb(102, 109, 32);
+        }
+
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5dede;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color:#e80707;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #0b0b0b;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #e30e0e;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #e80707;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            display: block; /* Make the button a block element */
+            margin: 0 auto; /* Center the button horizontally */
+            border-radius: 100px;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #fc3636;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--  logo -->
+        <div class="logo">
+            <img src="pic111.png" alt="pizza logo" class="logo">
+            <h1 class="logo_text">PIZZA PIZZA</h1>
+        </div>
+        <!-- Navigation section -->
+        <nav>
+            <ul class="ul1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="button">
+            <a href="order.html">Order Now</a>
+        </div>
+    </header>
+    <form name="personalDetalis">
+        <fieldset> 
+            <legend>Your Contact Information</legend>
+            <label for="fullname">
+                    Name:<input type="text" id="fullname" name="fullname">
+            </label>
+             <br>
+
+            <label for="email">
+                    Email:<input type="email" id="email" name="email">
+            </label>
+            <br>
+
+            <label for="email">
+                Phone:<input type="email" id="email" name="email">
+            </label>
+        </fieldset>
+    </form>
+
+    <br><br>
+    
+    <form name="review">
+        <fieldset>
+            <legend>Pizza details</legend>
+
+            <label for="advertisement">Name of Pizza
+                <textarea name="pizza" id="24" cols="30" rows="1"></textarea> 
+            </label>
+
+            <br><br>
+
+            <label > Size : </label> 
+                <label for="Small">
+                    <input type="radio" name="confirmation" id="yes">Small
+                </label>
+                
+                <label for="Medium">
+                    <input type="radio" name="confirmation" id="no">Medium
+                </label>
+
+                <label for="large">
+                    <input type="radio" name="confirmation" id="maybe">Large
+                </label>
+                <label for="Extra Large">
+                    <input type="radio" name="confirmation" id="maybe">Extra Large
+                </label>
+            <br><br>
+            <label > Toppings : <br> </label> 
+                <label for="mushroom">
+                    <input type="checkbox" name="confirmation" id="yes">Mushroom
+                </label><br>
+                
+                <label for="extra cheese">
+                    <input type="checkbox" name="confirmation" id="no">Extra Cheese
+                </label><br>
+
+                <label for="baby corn">
+                    <input type="checkbox" name="confirmation" id="maybe">Baby Corn
+                </label><br>
+                <label for="olives">
+                    <input type="checkbox" name="confirmation" id="maybe">Olives
+                </label><br>
+            <br>
+
+            <label for="comment">Additional Topping or any detail can be filled below: <br>
+                <textarea name="comment" id="comment" cols="45" rows="2">
+                </textarea>
+            </label> <br>
+                
+            <label for="email_alert">
+                <input type="checkbox" checked id="email_alert"> Sign me up for later  
+            </label> <br>
+
+
+        </fieldset>
+    </form>
+
+    <form name="personalDetalis">
+        <fieldset> 
+            <legend>Delivery option</legend>
+            <label for="fullname">
+                    Delivery Address: <br><input type="text" id="fullname" name="fullname">
+            </label>
+             <br><br>
+                        
+            <label for="email">
+                    Personal Delivery Time: <br><input type="email" id="email" name="email">
+            </label>
+            <br>
+        </fieldset>
+    </form>
+    <input type="submit" value="Order Now">
+</body>
+</html>
