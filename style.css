@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body background and text color */
+body {
+    background-image: url('pic.webp'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    color: #1f1c1c; 
+    font-family: Arial, sans-serif; 
+}
+
+/* Header styles */
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 30px;
+    text-align: center;
+}
+/* Header styles */
+h1 {
+    text-align: center; 
+    margin-top: 20px; 
+    font-family: "Poetsen One",sans-serif;}
+
+/* Main content styles */
+main {
+    margin: 20px;
+}
+h3{
+    font-size: larger;
+    color:rgb(29, 27, 4) ;
+    text-align: center;
+    font-weight: 800;
+    font-family: "Poetsen One",sans-serif;
+}
+
+/* Music video section */
+.music-video-section {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+/* Music video styles */
+.music-video {
+    width: 50%; /* 50% width of the container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Lyrics styles */
+.lyrics {
+    width: 45%; /* 45% width of the container */
+    overflow-y: auto; 
+    background-color: rgba(131, 108, 108, 0.5); /* Semi-transparent black background */
+    padding: 30px;
+    color: rgb(29, 27, 4);
+}
+
+/* Lyrics content styles */
+.lyrics-content {
+    padding: 15px;
+    font-family: "yellowRabbit","Poetsen One",sans-serif;
+}
+
+/* Footer styles */
+footer {
+    background-color: #928c5f; 
+    color: #ccc8ba; 
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer links styles */
+footer a {
+    color: #ccc8ba; 
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px; 
+}
+
+/* Footer links hover styles */
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
