@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+            <legend>Your Details</legend>
+            <form action="filldetails" class="details" id="1">
+<p>
+                Name : <input type="text" class="Nmae"><br>
+                Email : <input type="text" class="Email"><p>
+    </form> </fieldset>
+        <fieldset>
+            <form action="detail" class="detail"></form>
+            <legend>Book your room</legend>
+            <!--option for rooms-->
+                Which room would you like to book:
+                <select name="Ad" id="AD">
+                    <option value="single">single</option>
+                    <option value="double">double</option>
+                    <option value="Cabana">Cabana</option>
+                    <option value="Quad">Quad</option>
+                </select>
+            <br>
+            <label for="payment" class="payment">How would you like to pay</label><br>
+            <label for="debit">
+                debit: <input type="radio" class = "debit">
+            </label><br>
+            <label for="credit">
+                credit: <input type="radio" class = "credit">
+            </label><br>
+            <!-- space to fill credit or debit details-->
+            <lable class="card detail">
+                Please fill the card detail : <input type="text" class="card details">
+            </lable><br>
+            <!--place for review-->
+            <label for="Review">Please leave review <br>
+                <textarea name="box" id="2" cols="15" rows="4"></textarea>
+            </label>
+            <br>
+            <label for="EmailAlert">
+                <input type="checkbox">sign me up for email address
+            </label>
+            <br>
+            <input type="submit"><BR>
+            <!--feedback for the webpage-->
+            <label for="review" class="review">Did you find this page useful</label>
+            <label for="yes"><br>
+                Yes: <input type="radio" class = "yes">
+            </label>
+            <label for="yes">
+                No: <input type="radio" class = "No">
+            </label>
+        </fieldset>
+
+
+</body>
+</html>
